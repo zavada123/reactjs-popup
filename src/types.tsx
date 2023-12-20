@@ -20,6 +20,7 @@ export type PopupActions = {
   open: () => void;
   close: () => void;
   toggle: () => void;
+  reposition: () => void;
 };
 export interface PopupProps {
   trigger?: JSX.Element | ((isOpen: boolean) => JSX.Element);

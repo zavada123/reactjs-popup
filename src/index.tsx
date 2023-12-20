@@ -160,6 +160,9 @@ export const Popup = forwardRef<PopupActions, PopupProps>(
       toggle: () => {
         togglePopup();
       },
+      reposition: () => {
+        setPosition();
+      }
     }));
 
     // set Position
