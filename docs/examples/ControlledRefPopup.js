@@ -8,6 +8,7 @@ const ControlledRefPopup = () => {
   const openTooltip = () => ref.current.open();
   const closeTooltip = () => ref.current.close();
   const toggleTooltip = () => ref.current.toggle();
+  const repositionTooltip = () => ref.current.reposition();
 
   return (
     <div>
@@ -20,6 +21,10 @@ const ControlledRefPopup = () => {
 
       <button type="button" className="button" onClick={toggleTooltip}>
         toggle
+      </button>
+
+      <button type="button" className="button" onClick={repositionTooltip}>
+      reposition
       </button>
 
       <Popup

@@ -164,6 +164,7 @@ const GlobalModalWithRefTemplate: Story<PopupProps> = args => {
       <button onClick={() => popupRef?.current?.open()}> Open Modal </button>
       <button onClick={() => popupRef?.current?.close()}> Close Modal </button>
       <button onClick={() => popupRef?.current?.toggle()}>Toggle Modal</button>
+      <button onClick={() => popupRef?.current?.reposition()}>Reposition Modal</button>
       <Popup {...args} ref={popupRef}>
         Popup content Here
       </Popup>
